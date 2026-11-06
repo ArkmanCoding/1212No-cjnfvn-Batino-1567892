@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>نوبینو | انتخاب نقش</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+
+        <!-- Welcome Text -->
+        <h1 class="welcome-title">به نوبینو خوش آمدید</h1>
+        <p class="instruction-sub">لطفاً نقش خود را انتخاب کنید تا وارد فضای مخصوص خود شوید.</p>
+
+        <!-- Role Selection Circles -->
+        <div class="roles-grid">
+            <!-- فروشنده -->
+            <div class="role-circle" data-role="seller" tabindex="0" role="button" aria-label="فروشنده">
+                <span class="role-icon">🏪</span>
+                <span class="role-label">فروشنده</span>
+            </div>
+
+            <!-- خریدار (highlighted) -->
+           <a href="./Home/index.html"> 
+            <div class="role-circle buyer" data-role="buyer" tabindex="0" role="button" aria-label="خریدار">
+                <span class="popular-badge">محبوب‌ترین</span>
+                <span class="role-icon">🛒</span>
+                <span class="role-label">خریدار</span>
+            </div>
+</a> 
+            <!-- پیک -->
+            <div class="role-circle" data-role="courier" tabindex="0" role="button" aria-label="پیک">
+                <span class="role-icon">🛵</span>
+                <span class="role-label">پیک</span>
+            </div>
+        </div>
+
+        <!-- Help / Rules trigger -->
+        <button class="help-trigger" id="helpTrigger">
+            <span>📖</span> راهنما و قوانین
+        </button>
+    </div>
+
+    <!-- Modal overlay for rules -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <div class="modal-title">راهنما و قوانین نوبینو</div>
+            <div class="modal-body">
+                <p>🔹 فروشنده: مدیریت نانوایی و تنظیم نوبت‌ها</p>
+                <p>🔹 خریدار: رزرو نوبت بدون ایستادن در صف</p>
+                <p>🔹 پیک: تحویل سفارش‌ها به مشتریان</p>
+                <br>
+                <p>✅ پس از انتخاب نقش وارد صفحه مخصوص می‌شوید.</p>
+            </div>
+            <button class="modal-close" id="modalClose">متوجه شدم</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
